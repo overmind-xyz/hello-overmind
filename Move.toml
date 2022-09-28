@@ -1,0 +1,10 @@
+[package]
+name = "hello_overmind"
+version = "1.0.0"
+authors = ["Jacob Devore (jacob@overmind.xyz"]
+
+[addresses]
+hello_overmind = "0x1337"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", subdir = "aptos-move/framework/aptos-framework", rev = "71264a533e870b6eb680752fd9c5e9be0cb27d89" }
