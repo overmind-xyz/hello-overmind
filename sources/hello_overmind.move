@@ -15,7 +15,7 @@ module hello_overmind::HelloOvermind {
 
     struct Message has copy, drop {
         is_secret: bool,
-        message: vector<u8>,
+        message: vector<u8>
     }
 
     // Decode Secret Message: Return a vector of filtered byte strings (vector<u8>) where is_secret == true
