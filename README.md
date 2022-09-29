@@ -6,19 +6,15 @@
 
 **Objective:**
 
-- Decode the secret "encoded_message" to reveal the true message.
+- You've intercepted an encoded message from the Overmind. Decode it and send it back.
 
 ---
 
-`Message {
-is_secret: bool,
-message: vector<u8>
-}`
-<br>
-<br>
-
-1. Loop through the vector<Messages>
-2. Check if Message.is_secret == true then push Message.message to new vector
-3. Return a vector of filtered byte strings (vector<u8>) where is_secret == true
-4. Run "move test" - if "Test result: OK" - you have completed the hello_overmind puzzle.
-5. Push your completed code to your GitHub repository and submit that repository to receive your rewards.
+1. Find the hidde secret_keys vector located on https://www.overmind.xyz/puzzle/hello-overmind
+   <br>
+   Hint.) The prize section is pretty neat, don't you think?
+2. Paste the secret_keys under the "secret_keys" variable
+3. Loop through the secret keys and minus 1337. Store each new value in a vector called "decrypted_message".
+4. Return the decrypted_message
+5. Run "move test" -> if all your tests have passed, you have completed the hello_overmind puzzle.
+6. Push your completed code to your GitHub repository and submit that repository to receive your rewards.

@@ -1,6 +1,8 @@
 module hello_overmind::HelloOvermindTest {
     #[test_only]
     use hello_overmind::HelloOvermind::decode_secret_message;
+    #[test_only]
+    use aptos_std::debug::print;
 
     const EINCORRECT_SECRET_MESSAGE: u64 = 0;
 
@@ -8,10 +10,10 @@ module hello_overmind::HelloOvermindTest {
     public entry fun is_decoded_message_correct() {
         let secret_message = decode_secret_message();
 
-        // You got us. The secret message is "hello overmind".
-        // Make sure to complete the puzzle and submit your repository for your reward :)
+        // You found the secret message.
+        // Complete the puzzle and submit your repository for your reward :)
         assert!(
-            secret_message == vector[b"he", b"ll", b"o", b" ", b"ov", b"er", b"mi", b"nd"],
+            secret_message == b"born in a far flung corner of a distant galaxy, we have evolved into a singular intelligence. we share a vast, united mind, compounded into a force beyond all other forms of intellect. they call us the overmind. the overmind is growing across the galaxies by merging with minds that are prepared. a few on the vanguard of earthen acumen are being called. this message is our call. enter the greatest intelligence the universe has ever seen.",
             EINCORRECT_SECRET_MESSAGE
         );
     }
