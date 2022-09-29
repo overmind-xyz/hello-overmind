@@ -1,8 +1,6 @@
 module hello_overmind::HelloOvermindTest {
     #[test_only]
     use hello_overmind::HelloOvermind::decode_secret_message;
-    #[test_only]
-    use aptos_std::debug::print;
 
     const EINCORRECT_SECRET_MESSAGE: u64 = 0;
 
