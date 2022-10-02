@@ -11,6 +11,8 @@
 // 6.) Push your completed code to your GitHub repository and submit that repository to receive your rewards.
 module hello_overmind::HelloOvermind {
 
+    test
+
     // Decode the Secret Message
     public entry fun decode_secret_message(): vector<u8> {
         // Find the hidde secret_keys vector located on https://www.overmind.xyz/puzzle/hello-overmind
