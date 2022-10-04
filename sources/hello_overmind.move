@@ -11,15 +11,19 @@
 // 6.) Push your completed code to your GitHub repository and submit that repository to receive your rewards.
 module hello_overmind::HelloOvermind {
 
+    use std::vector;
+
     // Decode the Secret Message
     public entry fun decode_secret_message(): vector<u8> {
-        // Find the hidde secret_keys vector located on https://www.overmind.xyz/puzzle/hello-overmind
+        // Find the hidden secret_keys vector located on https://www.overmind.xyz/puzzle/hello-overmind
         // hint.) The prize section is pretty neat, don't you think?
         // Paste the secret_keys under the "secret_keys" variable
-        let secret_keys: vector<u64> = ;
+        let secret_keys: vector<u8> = vector[];
 
-        // Loop through the secret keys and minus 1337. Store each new value in a vector called "decrypted_message".
+        // Loop through the secret keys and add 13. Store each new value in a vector called "decrypted_message".
+        let decrypted_message: vector<u8> = vector[];
 
         // Return the decrypted_message
+        decrypted_message
     }
 }

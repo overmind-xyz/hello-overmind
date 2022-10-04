@@ -1,14 +1,12 @@
 module hello_overmind::HelloOvermindTest {
     #[test_only]
     use hello_overmind::HelloOvermind::decode_secret_message;
-    #[test_only]
-    use aptos_std::debug::print;
 
     const EINCORRECT_SECRET_MESSAGE: u64 = 0;
 
     #[test]
     public entry fun is_decoded_message_correct() {
-        let secret_message = decode_secret_message();
+        let secret_message: vector<u8> = decode_secret_message();
 
         // You found the secret message.
         // Complete the puzzle and submit your repository for your reward :)
