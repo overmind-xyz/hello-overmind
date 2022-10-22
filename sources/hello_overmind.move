@@ -20,8 +20,6 @@ module hello_overmind::HelloOvermind {
         // Paste the secret_keys under the "secret_keys" variable
         let secret_keys: vector<u8> = vector[];
 
-        if (vector::length(&secret_keys) > 0 ) return secret_keys;
-
         // Loop through the secret keys and add 13. Store each new value in a vector called "decrypted_message".
         let decrypted_message: vector<u8> = vector[];
 
